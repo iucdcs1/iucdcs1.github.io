@@ -1,0 +1,79 @@
+// main: ../style.less
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.works {
+    background: @white;
+    color: @gray;
+    font-family: 'Montserrat', sans-serif;
+    margin: 8.4rem 0;
+}
+
+p {
+    margin: 0 0 1rem 0;
+}
+
+.works__center {
+    text-align: center;
+    font-size: 6.1rem;
+    line-height: 1.1;
+    color: fade(@black, 15%);
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+    position: relative;
+}
+
+.container {
+    width: 95%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+}
+
+.project__number {
+    font-size: 6vw;
+    font-weight: 600;
+    padding: 0.66rem 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    height: calc(10vw + 1.33rem);
+    transition: all 0.2s ease-in;
+}
+
+.project__content {
+    border-top: 2px solid #fff;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 0.66rem;
+    padding: 1rem 0;
+}
+
+.project__content .title {
+    font-weight: 600
+}
+
+.project__content .description {
+    line-height: 1.8rem;
+}
+
+@media (max-width: 600px) {
+    .project__content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .project__content .story {
+        font-size: 1rem;
+    }
+}
