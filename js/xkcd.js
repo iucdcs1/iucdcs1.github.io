@@ -6,16 +6,14 @@ function getXKCD() {
     fetch(url)
    .then(response => response.text())
    .then((response) => {
-        console.log(response);
         const paramString = new URLSearchParams({ id: response});
         fetch(`https://fwd.innopolis.university/api/comic?${paramString}`)
         .then(response => response.json())
         .then((response) => {
-            console.log(response);
             document.getElementById("photo").src=response.img;
             document.getElementById("photo").alt=response.alt;
             document.getElementById("photo").title=response.safe_title;
-            const event = new Date(Date.UTC(response.year, response.month, response.day));
+            const event = new Date(Date.UTC(response.year, response.month - 1, response.day));
             document.getElementById("date").textContent="Date of publishing: " + event.toLocaleDateString();
         })
    });
