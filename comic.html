@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://google.fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,600,700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/xkcd.js"></script>
+        <title>Comic</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+
+                    <div class="user">
+                        <div class="user__avatar">
+                            <img src="images/dogLogo.png" alt="">
+                        </div>
+                        <div class="user__content">
+                            <div class="user__name">Daniil Vasilev</div>
+                            <div class="user__prof">Frontend Developer<br>IU Student</div>
+                        </div>
+                    </div>
+
+                    <nav class="nav">
+                        <a class="nav__link" href="#">work</a>
+                        <a class="nav__link" href="#">about</a>
+                        <a class="nav__link" href="#">blog</a>
+                        <a class="nav__link  nav__link--btn" href="#">contact me</a>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+
+        <section class="intro">
+            <div class="container">
+
+                <div class="intro___inner">
+                    <div class="intro__content">
+                        <h2 class="intro__subtitle">Here you can watch</h2>
+                        <h1 class="intro__title">XKCD comics :D</h1>
+                        <div class="intro__text">or just return back...</div>
+
+                        <div class="social">
+                            <a class="social__link" href="https://telegram.me/NPggL" id="tg-link">
+                                <img src="images/telegram.svg" alt="">
+                            </a>
+                            <a class="social__link" href="https://github.com/iucdcs1" id="gh-link">
+                                <img src="images/github.svg" alt="">
+                            </a>
+                            <a class="social__link" href="mailto:d.vasilev@innopolis.university" id="email">
+                                <img src="images/mail.svg" alt="">
+                            </a>
+                        </div>
+
+                        <a class="btn" href="../">RETURN BACK</a>
+                        <button class="btn" type="button" onclick="getXKCD()">SEE NEW COMIC</button>
+                    </div>
+                    
+                    <figure class="intro__content">
+                        <img class="intro__photo2" id="photo" src="" alt="Loading...">
+                        <figcaption id="date">Дата</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+    </body>
+</html>
