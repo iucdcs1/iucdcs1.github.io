@@ -27,7 +27,6 @@
                 <a class="btn" href="{base}/comic">SEE COMIC</a>
                 <button class="btn" type="button">SEE MY RESUME</button>
             </div>
-            
             <img class="intro__photo" src="images/photo.png" alt="Man pointing on my name">
         </div>
 
