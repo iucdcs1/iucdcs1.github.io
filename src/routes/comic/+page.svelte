@@ -1,8 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { setXKCDData } from '$lib/setXKCD';
-    import Header from '../../components/Header.svelte';
-    import Footer from '../../components/Footer.svelte';
+    import { base } from '$app/paths';
 
     onMount(() => {
         if (typeof document !== 'undefined') { 
@@ -20,7 +19,7 @@
                     <h1 class="intro__title">XKCD comics :D</h1>
                     <div class="intro__text">or just return back...</div>
 
-                    <a class="btn" href="../">RETURN BACK</a>
+                    <a class="btn" href="{base}/#">RETURN BACK</a>
                     <button on:click={setXKCDData} class="btn" type="button">SEE NEW COMIC</button>
                 </div>
                 

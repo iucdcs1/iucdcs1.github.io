@@ -1,4 +1,8 @@
-5<footer>
+<script>
+    import { base } from '$app/paths';
+</script>
+
+<footer>
     <div class="waves">
         <div class="wave" id="wave1"></div>
         <div class="wave" id="wave2"></div>
@@ -19,11 +23,11 @@
     </ul>
 
     <ul class="menu">
-        <li><a href="../#">Home</a></li>
-        <li><a href="../#about">About</a></li>
-        <li><a href="../comic/#">Comic</a></li>
-        <li><a href="../projects/#">Projects</a></li>
-        <li><a href="../#">Contact</a></li>
+        <li><a href="{base}/#">Home</a></li>
+        <li><a href="{base}/#about">About</a></li>
+        <li><a href="{base}/comic/#">Comic</a></li>
+        <li><a href="{base}/projects/#">Projects</a></li>
+        <li><a href="{base}/#">Contact</a></li>
     </ul>
 
     <p>©2023 Daniil Vasilev | No Rights Reserved</p>
