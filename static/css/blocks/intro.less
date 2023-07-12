@@ -1,0 +1,60 @@
+// main: ../style.less
+
+@import "../vars.less";
+
+.intro___inner {
+    display: flex;
+    padding-bottom: 120px;
+    padding-top: 80px;
+    border-bottom: 1px solid fade(@gray, 30%);
+    position: relative;
+}
+
+.intro__content {
+    width: 50%;
+}
+
+.intro__subtitle {
+    font-size: 2.13rem;
+    color: @black;
+    font-weight: 200;
+}
+
+.intro__title {
+    font-size: 3rem;
+    color: @black;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.intro__text {
+    font-size: 1.2rem;
+    color: fade(@black, 70%);
+    margin-bottom: 25px;
+}
+
+.intro__photo {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    object-fit:contain;
+}
+
+.intro__photo2 {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 0;
+    height: 75%;
+    width: 50%;
+    object-fit:contain;
+}
+
+figcaption {
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
