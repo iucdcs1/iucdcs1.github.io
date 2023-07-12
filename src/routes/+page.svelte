@@ -2,10 +2,6 @@
     import Header from "../components/Header.svelte";
     import Footer from "../components/Footer.svelte";
   </script>
-  
-  <svelte:head>
-    <Header />
-  </svelte:head>
 
 <!-- Intro -->
 <section class="intro">
@@ -54,11 +50,9 @@
                     <p>My dedication to learning and improving my skills is evident in my achievements. I have completed several courses in Python/Java programming languages, which have given me a solid foundation in this popular languages. I also have experience working with Django and Spring frameworks, and have knowledge in database management. These skills have allowed me to work on complex projects that require a deep understanding of web development and programming.</p>
                     <p>Currently, I am working on two exciting projects. The first is a tourism mobile app named KazanTravel, which has some similarities with TripAdvisor. This app will allow users to discover new places to visit, read reviews from other travelers, and plan their trips with ease. The second project is a portfolio website for my frontend web development course at the university. This website will showcase my skills and projects to potential employers and clients.</p>
                 </div>
-                <a class="btn" href="#">CONTACT ME</a>
+                <a class="btn" href="../#">CONTACT ME</a>
                 <button class="btn" type="button">SEE MY RESUME</button>
             </div>
         </div>
     </div>
 </section>
-
-<Footer />

@@ -3,9 +3,6 @@
     import Footer from "../../components/Footer.svelte";
 </script>
   
-  <svelte:head>
-    <Header />
-  </svelte:head>
   <!--Projects-->
 <section class="works">
     <div class="container" id="projects">
@@ -69,4 +66,3 @@
         </ul>
     </div>
 </section>
-  <Footer />
