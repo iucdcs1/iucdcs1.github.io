@@ -15,22 +15,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          node-version: '21.7.3'
+
       - name: Install dependencies
         run: npm install
+
       - name: Check
         run: npm run check
+
       - name: Build website
         run: npm run build
-      - name: Artifacts
-        uses: actions/upload-pages-artifact@v1
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
         with:
-          path: 'build/'
+          name: build-artifact
+          path: build/
 
   deploy:
     name: Deploy
@@ -44,6 +43,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact
+          path: build/
+          
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v1
