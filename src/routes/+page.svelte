@@ -24,7 +24,7 @@
                     </a>
                 </div>
 
-                <button class="btn" type="button">SEE MY RESUME</button>
+                <a class="btn" href="/DaniilVasilev.pdf" download>SEE MY RESUME</a>
             </div>
             <img class="intro__photo" src="images/photo.png" alt="Man pointing on my name">
         </div>
@@ -43,9 +43,11 @@
                 <h3 class="about__title">#ABOUT ME</h3>
                 <h2 class="about__bigtitle">WHO AM I</h2>
                 <div class="about__text">
-                    <p>I am a young student of Innopolis University. I was born and raised in Saint Petersburg, Russia, where have graduated from the Saint Petersburg Academic Gymnasium №56. I has always been interested in technology, particularly in front-end web development and information security so I`m passionate about creating user-friendly and visually appealing websites that are also secure and reliable.</p>
-                    <p>My dedication to learning and improving my skills is evident in my achievements. I have completed several courses in Python/Java programming languages, which have given me a solid foundation in this popular languages. I also have experience working with Django and Spring frameworks, and have knowledge in database management. These skills have allowed me to work on complex projects that require a deep understanding of web development and programming.</p>
-                    <p>Currently, I am working on two exciting projects. The first is a tourism mobile app named KazanTravel, which has some similarities with TripAdvisor. This app will allow users to discover new places to visit, read reviews from other travelers, and plan their trips with ease. The second project is a portfolio website for my frontend web development course at the university. This website will showcase my skills and projects to potential employers and clients.</p>
+                    <p>My name is Daniil Vasilev. I am currently a third-year student at Innopolis University, specializing in backend development, distributed systems, and cybersecurity. My technical background includes experience in server-side development with Go and Python, as well as working with databases such as PostgreSQL and MongoDB using ORM tools like GORM and SQLAlchemy.</p>
+
+                    <p>I have contributed to several projects where I was responsible for building REST APIs, implementing user authentication with JWT, and integrating asynchronous services using RabbitMQ and WebSockets. I also have experience with inter-service communication via gRPC. My development workflow includes containerization with Docker and Docker Compose, and I have explored orchestration tools such as Kubernetes. In a recent project, I developed a system that manages business operations, supports real-time notifications, and integrates with third-party services like Google Forms and Google Calendar.</p>
+
+                    <p>I am particularly interested in high-load, distributed systems and the application of modern DevOps practices and security principles. My goal is to design and implement scalable, efficient, and secure backend solutions using contemporary technologies.</p>
                 </div>
             </div>
         </div>

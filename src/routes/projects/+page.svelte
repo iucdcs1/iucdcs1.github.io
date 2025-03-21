@@ -195,7 +195,7 @@
                     <div class="project__content">
                         <div class="title">Multi-session Quest bot<br>(Offer, end 2024 - start 2025)</div>
                         <div class="description">
-                            To be added.
+                            <p>To be added.</p>
                             <p class="project__link">
                                 Link is not present (Private Project)
                             </p>
