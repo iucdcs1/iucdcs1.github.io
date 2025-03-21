@@ -9,7 +9,7 @@
                 </div>
                 <div class="user__content">
                     <div class="user__name">Daniil Vasilev</div>
-                    <div class="user__prof">Frontend Developer<br>IU Student</div>
+                    <div class="user__prof">Golang Backend Developer<br>IU BS22 Student</div>
                 </div>
             </div>
 

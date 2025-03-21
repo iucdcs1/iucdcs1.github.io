@@ -75,30 +75,30 @@ footer .wave {
 
 footer .wave#wave1 {
     z-index: 1000;
-    opacity: 0.8;
+    opacity: 0.6;
     bottom: 0;
-    animation: animateWave 6s linear infinite;
+    animation: animateWave 3s ease-in-out infinite;
 }
 
 footer .wave#wave2 {
     z-index: 999;
     opacity: 0.4;
     bottom: 10px;
-    animation: animateWave_02 6s linear infinite;
+    animation: animateWave_02 4s ease-in-out infinite;
 }
 
 footer .wave#wave3 {
     z-index: 1000;
-    opacity: 0.2;
+    opacity: 0.3;
     bottom: 15px;
-    animation: animateWave 5s linear infinite;
+    animation: animateWave 5s cubic-bezier(0.36, 0.45, 0.63, 1.53) infinite;
 }
 
 footer .wave#wave4 {
     z-index: 999;
-    opacity: 0.6;
+    opacity: 0.5;
     bottom: 20px;
-    animation: animateWave_02 5s linear infinite;
+    animation: animateWave_02 6s ease-in-out infinite;
 }
 
 @keyframes animateWave{
