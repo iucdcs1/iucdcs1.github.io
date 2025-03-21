@@ -1,6 +1,39 @@
 <script lang="ts">
     import { base } from '$app/paths';
-  </script>
+
+    import { onMount } from 'svelte';
+	let showResumeOptions = false;
+	let dropdownRef: HTMLDivElement;
+	let buttonRef: HTMLButtonElement;
+	let dropdownTop = '100%';
+
+	function toggleResumeOptions() {
+		if (showResumeOptions) {
+			showResumeOptions = false;
+			return;
+		}
+		const buttonRect = buttonRef?.getBoundingClientRect();
+		dropdownTop = `${buttonRect?.height + 10}px`;
+		showResumeOptions = true;
+	}
+
+	function closeOptions() {
+		showResumeOptions = false;
+	}
+
+	function handleClickOutside(event: MouseEvent) {
+		if (dropdownRef && !dropdownRef.contains(event.target as Node)) {
+			closeOptions();
+		}
+	}
+
+	onMount(() => {
+		document.addEventListener('click', handleClickOutside);
+		return () => {
+			document.removeEventListener('click', handleClickOutside);
+		};
+	});
+</script>
 
 <!-- Intro -->
 <section class="intro">
@@ -19,12 +52,25 @@
                     <a class="social__link" href="https://github.com/iucdcs1" id="gh-link">
                         <img src="images/github.svg" alt="GH">
                     </a>
-                    <a class="social__link" href="mailto:d.vasilev@innopolis.university" id="email">
+                    <a class="social__link" href="mailto:w.daniil.vasilev@gmail.com" id="email">
                         <img src="images/mail.svg" alt="Mail">
                     </a>
                 </div>
 
-                <a class="btn" href="/DaniilVasilev.pdf" download>SEE MY RESUME</a>
+                <div style="position: relative;" bind:this={dropdownRef}>
+                    <button class="btn" type="button" on:click={toggleResumeOptions} bind:this={buttonRef}>
+                        SEE MY RESUME
+                    </button>
+
+                    {#if showResumeOptions}
+                        <a class="resume__link" href="/DaniilVasilev_EN.pdf" download>
+                            EN
+                        </a>
+                        <a class="resume__link" href="/DaniilVasilev_RU.pdf" download>
+                            RU
+                        </a>
+                    {/if}
+                </div>
             </div>
             <img class="intro__photo" src="images/photo.png" alt="Man pointing on my name">
         </div>
