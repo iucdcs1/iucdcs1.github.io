@@ -72,7 +72,6 @@
                     {/if}
                 </div>
             </div>
-            <img class="intro__photo" src="images/photo.png" alt="Man pointing on my name">
         </div>
 
     </div>
@@ -82,9 +81,6 @@
 <section class="about">
     <div class="container" id="about">
         <div class="about__inner">
-            <div class="about__photo">
-                <img class="img" src="images/aboutphoto.png" alt="Fingerman">
-            </div>
             <div class="about__content">
                 <h3 class="about__title">#ABOUT ME</h3>
                 <h2 class="about__bigtitle">WHO AM I</h2>
