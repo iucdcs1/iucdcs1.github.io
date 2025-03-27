@@ -63,11 +63,11 @@
                     </button>
 
                     {#if showResumeOptions}
-                        <a class="resume__link" href="/DaniilVasilev_EN.pdf" download>
-                            EN
+                        <a class="resume__link" href="/DaniilVasilev-Golang.pdf" download>
+                            Go
                         </a>
-                        <a class="resume__link" href="/DaniilVasilev_RU.pdf" download>
-                            RU
+                        <a class="resume__link" href="/DaniilVasilev-Python.pdf" download>
+                            Python
                         </a>
                     {/if}
                 </div>
